@@ -33,3 +33,38 @@ func TestSet(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkFindGreaterThan_FFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_greater_integer(0xFFFE)
+	}
+}
+func BenchmarkFindGreaterThan_FFFFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_greater_integer(0xFFFFFE)
+	}
+}
+
+func BenchmarkFindGreaterThan_FFFFFFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_greater_integer(0xFFFFFFFE)
+	}
+}
+
+func BenchmarkFindLowerThan_FFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_lower_integer(0xFFFE)
+	}
+}
+
+func BenchmarkFindLowerThan_FFFFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_lower_integer(0xFFFFFE)
+	}
+}
+
+func BenchmarkFindLowerThan_FFFFFFFE(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		find_closest_lower_integer(0xFFFFFFFE)
+	}
+}
