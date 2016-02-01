@@ -13,5 +13,5 @@ Solving 'Elements Of Programming Interviews' in Golang.
 [5.3 - Reverse bits of 64-bit unsigned integer]
 (http://codingberg.com/golang/interview/reverse-bits-of-64-bit-unsigned-integer)
 
-[5.4 - Find the closest integer width same weight]
+[5.4 - Find the closest integer with same weight]
 (http://codingberg.com/golang/interview/find-closest-integer-same-weight)
